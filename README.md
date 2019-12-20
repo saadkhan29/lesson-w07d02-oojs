@@ -3,7 +3,7 @@
 ## Learning Objectives
 
   - Explain the importance of OOJS 
-  - Describe the role of ES2015 Classes and how they work 
+  - Describe the role of JS ES Classes and how they work 
   - Use the `new` keyword to create objects with shared properties
   - Explain the `this` keyword and its scope.
   - Explain `export` and `import` for building reusable modules.
