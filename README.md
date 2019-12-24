@@ -450,10 +450,6 @@ Implement the following methods:
 
 **NOTE:** When deciding if there are enough seats available, remember that the driver takes up 1 seat, but is NOT counted as a passenger in passengerCount(). You can assume the driver is the owner.
 
-### Gladiator Arena - Lab (30 Minutes)
-
-Fork and clone the [Gladiator Arena Lab](https://github.com/sei-eternity/js-gladiator) repo to find the lab requirements and to get started coding.
-
 -------
 
 ## Closing / Questions
