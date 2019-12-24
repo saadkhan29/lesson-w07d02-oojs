@@ -369,37 +369,7 @@ bear.makeSound(); // Bear barks.
 
 **You Do:** Create a `Cat` class that extends the `Animal` class.
 
-
-## Modules: Import & Export
-
-The `export` statement is used when creating JavaScript modules to export **functions**, **objects**, or **primitive values** from the module so they can be used by other programs with the `import` statement.
-
-The static `import` statement is used to import bindings which are exported by another module. 
-
-The exported and imported modules are in `strict mode` whether you declare them as such or not.
-
-**Export Example:**
-
-```js
-const getRandom = () => Math.floor(Math.random() * 100);
-
-export { getRandom };
-```
-
-**Import Example:**
-
-```js
-import { getRandom } from './helper.js';
-```
-
-It is important to note the following:
-
-- You need to include the script in question in your HTML with a `<script>` element of `type="module"`, so that it gets recognised as a module and dealt with appropriately.
-- You can't run JS modules via a `file://` URL — you'll get [CORS](https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS) errors. You need to run it via an HTTP server.
-
-### Code Refactoring
-
-Let's take the `Animal`, `Dog`, and `Cat` classes and refactor them into separate modules.
+<hr>
 
 ## Labs
 
