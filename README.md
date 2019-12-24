@@ -20,10 +20,10 @@ We've already gotten exposure to JavaScript objects using object literal notatio
 
 ```js
 let person = {
-  firstName: 'Usman',
-  lastName: 'Bashir',
+  firstName: 'Ali',
+  lastName: 'Khan',
   sayHi: function() {
-    console.log("Hi, I'm Usman");
+    console.log("Hi, I'm Ali");
   }
 }
 ```
@@ -31,11 +31,11 @@ let person = {
 What's nice about the above code snippet? How does it compare to this...
 
 ```js
-  let firstName = 'Usman';
-  let lastName = 'Bashir';
+  let firstName = 'Ali';
+  let lastName = 'Khan';
 
   function sayHi(){
-    console.log("Hi, I'm Usman");
+    console.log("Hi, I'm Ali");
   }
 ```
 
