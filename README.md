@@ -250,6 +250,82 @@ Unlike object notation, you do not need to use commas when separating class meth
 
 - [Read more about the `this` keyword](https://www.quirksmode.org/js/this.html)
 
+## Getters and Setters
+
+```js
+// ES6 get and set
+class Person {
+  constructor(name) {
+    this._name = name;
+  }
+
+  get name() {
+    return this._name.toUpperCase();
+  }
+
+  set name(newName) {
+    this._name = newName;   // validation could be checked here such as only allowing non numerical values
+  }
+
+  walk() {
+    console.log(this._name + ' is walking.');
+  }
+}
+         
+let bob = new Person('Bob');
+console.log(bob.name);  // Outputs 'BOB'
+bob.name = 'Saad'
+console.log(bob.name);  // Outputs 'Saad'
+```
+### Inheritance in ES6
+
+```js
+class Person {
+  constructor(name) {
+    this._name = name;
+  }
+
+  get name() {
+    return this._name;
+  }
+
+  set name(newName) {
+    this._name = newName;
+  }
+
+  walk() {
+    console.log(this._name + ' is walking.');
+  }
+}
+         
+class Programmer extends Person { 
+  constructor(name, programmingLanguage) {
+    super(name);
+    this._programmingLanguage = programmingLanguage;
+  }
+
+  get programmingLanguage() {
+    return this._programmingLanguage;
+  }
+
+  set programmingLanguage(newprogrammingLanguage) {
+    this._programmingLanguage = newprogrammingLanguage;
+  }
+
+  writeCode() {
+    console.log(this._name + ' is coding in ' + this._programmingLanguage + '.');
+  }
+}
+         
+let bob = new Person('Bob');
+bob.walk();
+         
+let cory = new Programmer('Cory', 'JavaScript');
+cory.walk();
+cory.writeCode();
+console.log(cory.name);
+```
+
 ### Another Example to Try:
 
 ```js
@@ -272,7 +348,7 @@ class Animal {
 }
 ```
 
-### Sub classing with `extends`
+### Sub classing with `extends` (Inheritance in ES6)
 
 The `extends` keyword is used in classes to create a class as a child of another class. So let's use it to create a `Dog` class that extends the `Animal` class.
 
