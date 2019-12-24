@@ -214,8 +214,8 @@ class Person {
   }
 }
 
-const usman = new Person("Usman");
-usman.speak(); // "Hello, I'm Usman"
+const saad = new Person("Saad");
+saad.speak(); // "Hello, I'm Saad"
 ```
 
 Notice the use of `this` keyword. Here's why we write classes this way...
