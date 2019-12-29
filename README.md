@@ -201,20 +201,17 @@ Classes work a lot like the `makeCar` function we just created, but they're supp
 
 ```js
 class Person {
-  // We use the constructor method to initialize properties for a class instance.
-  // It takes whatever arguments we want to pass into an instance.
-  constructor(initialName){
-    this.name = initialName;
-    this.species = "Homo Sapiens";
+  constructor(name) {
+    this.name = name;
   }
-  // We define any methods accessible to an instance outside of the constructor
-  speak() {
-    return `Hello! I'm ${this.name}`;
+
+  walk() {
+    console.log(this.name + ' is walking.');
   }
 }
-
-const Bob = new Person("Bob");
-Bob.speak(); // "Hello, I'm Bob"
+         
+let bob = new Person('Bob');
+bob.walk();
 ```
 
 Notice the use of `this` keyword. Here's why we write classes this way...
@@ -265,7 +262,7 @@ class Person {
   }
 
   set name(newName) {
-    this._name = newName;   // validation could be checked here such as only allowing non numerical values
+    this._name = newName;  
   }
 
   walk() {
