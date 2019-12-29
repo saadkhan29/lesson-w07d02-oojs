@@ -271,9 +271,9 @@ class Person {
 }
          
 let bob = new Person('Bob');
-console.log(bob.name);  // Outputs 'BOB'
+bob.walk(); 
 bob.name = 'Saad'
-console.log(bob.name);  // Outputs 'Saad'
+bob.walk();
 ```
 <br>
 In our class above we have a getter and setter for our name property. We use _ convention to create a backing field to store our name property. Without this every time get or set is called it would cause a stack overflow. The get would be called and which would cause the get to be called again over and over creating an infinite loop.
