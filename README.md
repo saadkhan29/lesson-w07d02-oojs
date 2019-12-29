@@ -250,6 +250,8 @@ Unlike object notation, you do not need to use commas when separating class meth
 - [Read more about the `this` keyword](https://www.quirksmode.org/js/this.html)
 
 ## Getters and Setters
+ES6 classes brings a new syntax for getters and setters on object properties. Get and set allows us to run code on the reading or writing of a property. ES5 had getters and setters as well but was not widely used because of older IE browsers. ES5 getters and setters did not have as nice of a syntax that ES6 brings us. So let’s create a get and set for our name property.
+<br>
 
 ```js
 // ES6 get and set
@@ -276,6 +278,9 @@ console.log(bob.name);  // Outputs 'BOB'
 bob.name = 'Saad'
 console.log(bob.name);  // Outputs 'Saad'
 ```
+<br>
+In our class above we have a getter and setter for our name property. We use _ convention to create a backing field to store our name property. Without this every time get or set is called it would cause a stack overflow. The get would be called and which would cause the get to be called again over and over creating an infinite loop.
+
 
 ### Another Example to Try:
 
