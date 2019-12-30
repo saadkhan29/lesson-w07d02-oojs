@@ -1,4 +1,4 @@
-# Object Oriented JavaScript, Classes
+# Object Oriented JavaScript and Classes
 
 ## Learning Objectives
 
